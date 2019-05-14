@@ -168,7 +168,8 @@
 //#endif
 //
 //// MARK: - ErrorConvertible conformance
-//  
+//
+import Foundation
 extension NSError: ErrorConvertible {
   public static func error(from error: Swift.Error) -> Self {
     func cast<T: NSError>(_ error: Swift.Error) -> T {
